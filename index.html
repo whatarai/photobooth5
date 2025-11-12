@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>線上拍貼機</title>
+<style>
+  body { font-family: sans-serif; text-align: center; margin: 20px; background: #f8f8f8; }
+  video, canvas { border: 2px solid #ccc; margin: 10px; border-radius: 10px; }
+  select, button { margin: 5px; padding: 5px 10px; }
+</style>
+</head>
+<body>
+
+<h1>線上拍貼機</h1>
+
+<video id="camera" autoplay playsinline width="320" height="240"></video>
+<br>
+
+<select id="filter">
+  <option value="none">原始</option>
+  <option value="grayscale(100%)">黑白</option>
+  <option value="sepia(80%)">懷舊</option>
+  <option value="brightness(1.5)">亮度 +50%</option>
+  <option value="contrast(150%)">對比 +50%</option>
+</select>
+<br>
+
+<h2>上傳你的貼紙</h2>
+<input type="file" id="stickerUpload" accept="image/*">
+<br>
+
+<button id="snap">拍照</button>
+<canvas id="photo" width="320" height="240"></canvas>
+<br>
+<a id="download" download="photo.png">下載照片</a>
+
+<script src="app.js"></script>
+</body>
+</html>
