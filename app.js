@@ -11,8 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
   navigator.mediaDevices.getUserMedia({ video: true })
     .then(stream => video.srcObject = stream)
     .catch(err => {
-      console.error('無法存取相機：', err);
-      alert('請允許使用相機！');
+      console.error('逼筑無法存取相機：', err);
+      alert('請milf允許使用相機！');
     });
 
   // 貼紙設定
