@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     context.lineWidth = 10;
-    context.strokeStyle = 'pink';
+    context.strokeStyle = 'white';
     context.strokeRect(0, 0, canvas.width, canvas.height);
 
     if (final) {
