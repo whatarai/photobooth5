@@ -38,3 +38,45 @@
 <script src="app.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>線上拍貼機</title>
+
+  <!-- React CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- 背景樣式 -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("background.jpg"); /* ← 換成你的檔名 */
+      background-size: cover;       /* 填滿螢幕 */
+      background-position: center;  /* 置中 */
+      background-repeat: no-repeat; /* 不重複 */
+      backdrop-filter: blur(2px);   /* 可選：淺淺模糊更漂亮 */
+    }
+
+    /* 讓拍貼機內容更清楚可見 */
+    #root {
+      backdrop-filter: blur(6px);
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 20px;
+      padding: 20px;
+      width: 90%;
+      max-width: 600px;
+      margin: 40px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- 你的拍貼機 JS -->
+  <script src="app.js"></script>
+</body>
+</html>
